@@ -504,7 +504,7 @@
         </section>
         <!--Testimonials Section End --> 
 <!--
-        !--Contact Section Start-->
+      <!-- Contact Section Start -->
 <section class="contact pt-100 pb-100" data-scroll-index="5">
     <div class="container">
         <div class="row">
@@ -517,21 +517,21 @@
         </div>
         <div class="row">
             <div class="col-lg-10 offset-lg-1">
-                <!--Contact Form-->
-                <form id='contact-form' method='POST' action="contact.php">
+                <!-- Contact Form -->
+                <form id='contact-form' name='contactForm' method='POST' data-netlify="true">
                     <input type='hidden' name='form-name' value='contactForm' />
                     <div class="row">
                         <div class="col-md-6 form-group">
                             <!-- Name Field -->
-                            <input type="text" class="form-control con-validate" id="contact-name" name="con_name" placeholder="Name" minlength=3 required>
+                            <input type="text" class="form-control con-validate" id="contact-name" name="name" placeholder="Name" minlength="3" required>
                         </div>
                         <div class="col-md-6 form-group">
                             <!-- Email Field -->
-                            <input type="email" class="form-control con-validate" id="contact-email" name="con_email" placeholder="Email" required>
+                            <input type="email" class="form-control con-validate" id="contact-email" name="email" placeholder="Email" required>
                         </div>
                         <div class="col-md-12 form-group">
                             <!-- Message Box -->
-                            <textarea class="form-control con-validate" id="contact-message" name="con_message" placeholder="How can we help you?" rows=6 required></textarea>
+                            <textarea class="form-control con-validate" id="contact-message" name="message" placeholder="How can we help you?" rows="6" required></textarea>
                         </div>
                         <div class="col-md-12 text-center">
                             <!-- Contact Button -->
@@ -545,7 +545,8 @@
         </div>
     </div>
 </section>
-<!--Contact Section End-->
+<!-- Contact Section End -->
+
 
   
 
